@@ -66,8 +66,8 @@ app.get('/map', function(req, res) {
 app.get('/pixel.gif', function(req, res) {
   res.writeHead(200, pixelHeaders);
   res.end(pixel);
-  remote_ip = '92.254.85.252' // req.remoteAddress
-  site_name = 'http://localhost'
+  remote_ip = req.remoteAddress
+  site_name = 'http://matsimitsu.com'
   cities.lookup(remote_ip, function(err, data) {
       if (err) {
         console.log('Could not grab location for', remote_ip, ' - ', data)
