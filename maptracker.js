@@ -90,8 +90,8 @@ app.get('/pixel.gif', function(req, res) {
 // get configuration information
 app.get('/js/config.js', function(req, res) {
   html = [
-    'var WSHOST = "' + wshost + '";'
-  + 'var WSPORT = ' + wsport + ';'
+    'var WSHOST = "http://maptracker.matsimitsu.com";'
+  + 'var WSPORT = 3001 ;'
   ]
 
   res.send(html.join('\n'))
