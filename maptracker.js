@@ -66,7 +66,7 @@ app.get('/map', function(req, res) {
 app.get('/pixel.gif', function(req, res) {
   res.writeHead(200, pixelHeaders);
   res.end(pixel);
-  remote_ip = req.connection.remoteAddress
+  remote_ip = req.headers['x-real-ip'] // We're forwarding trough NginX
   site_name = 'http://matsimitsu.com'
   cities.lookup(remote_ip, function(err, data) {
       if (err) {
