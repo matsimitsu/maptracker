@@ -17,7 +17,7 @@ var http = require('http')
   , host = process.argv.length >= 2 && process.argv[2] || process.env.HOST || process.env.POLLA_HOST || 'localhost'
 
   , wsport = process.env.WSPORT || + port + 111
-  , wshost = process.env.WSHOST || host
+  , wshost = 'http://maptracker.matsimitsu.com'
 
   , fs = require('fs')
   , pixel = fs.readFileSync(__dirname + '/pixel.gif')
