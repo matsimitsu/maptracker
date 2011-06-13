@@ -1,0 +1,17 @@
+{ "name": "maptracker"
+, "description": "maptracker geoips a tracking 'pixel'"
+, "version": "0.0.5"
+, "author": "Robert Beekman <robert@matsimitsu.com> (http://matsimitsu.com/)"
+, "repository":
+  { "type": "git"
+  , "url": "git://github.com/matsimitsu/maptracker.git"
+  }
+, "bin": { "maptracker": "./maptracker.js" }
+, "dependencies":
+  { "express": ">=2.0.0"
+  , "geoip": ">=0.3.1"
+  , "socket.io": ">=0.6.0"
+  , "jade": ">=0.10.4"
+  }
+, "engines": { "node": ">=0.4.0" }
+}
